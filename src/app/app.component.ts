@@ -19,4 +19,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'the globe and bootstrap';
+
+  doPopup() {
+    alert('hello ')
+  }
 }
