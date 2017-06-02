@@ -18,5 +18,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'the globe app works!';
+  title = 'the globe and bootstrap';
 }
