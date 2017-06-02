@@ -1,5 +1,17 @@
 import { Component } from '@angular/core';
 
+// export enum ActionType {
+//     ADD_UPDATE,
+//     DELETE
+// }
+
+// export class AcNotification {
+//     id: number;
+//     entity?: AcEntity;
+//     actionType: ActionType;
+// }
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
