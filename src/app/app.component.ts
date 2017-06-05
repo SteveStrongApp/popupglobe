@@ -24,6 +24,7 @@ import { ViewerConfiguration } from 'angular-cesium/src/services/viewer-configur
 export class AppComponent {
   title = 'the globe and bootstrap';
 
+
 	constructor(viewerConf: ViewerConfiguration) {
 		viewerConf.viewerOptions = {
       homeButton: false,
@@ -38,5 +39,10 @@ export class AppComponent {
     //sceneMode : Cesium.SceneMode.COLUMBUS_VIEW,
 		};
 	}
+
+
+  doPopup() {
+    alert('hello ')
+  }
 
 }
