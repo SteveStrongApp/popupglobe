@@ -12,17 +12,20 @@ import { GlobeService } from "./globe.service";
 export class GlobeComponent implements OnInit {
   geojson: any;
 
-  constructor(private service?: GlobeService) {
+
+  constructor(private service: GlobeService) {
   }
 
   ngOnInit() {
-    this.service && this.service.getRegions(result => {
-      this.geojson = result;
-    });
-
+    // this.service && this.service.getRegions(result => {
+    //   this.geojson = result;
+    // });
   }
 
-  doMorph() {
-    //this._ces.morphTo2D(10);
+  doDrawRegions() {
+    this.service.getRegions().subscribe(n => {
+      this.geojson = n;
+      console.log(this.geojson)
+    });
   }
 }
