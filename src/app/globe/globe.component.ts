@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { CesiumService } from 'angular-cesium/src/services/cesium/cesium.service';
 import { ViewerConfiguration } from 'angular-cesium/src/services/viewer-configuration/viewer-configuration.service';
-
+import { GlobeService } from "./globe.service";
 
 @Component({
   selector: 'app-globe',
@@ -10,17 +10,16 @@ import { ViewerConfiguration } from 'angular-cesium/src/services/viewer-configur
   styleUrls: ['./globe.component.css']
 })
 export class GlobeComponent implements OnInit {
+  geojson: any;
 
-  constructor(private _ces: CesiumService, private _config: ViewerConfiguration) {
-
-
+  constructor(private service?: GlobeService) {
   }
 
   ngOnInit() {
-    this._config.viewerOptions = {
-      homeButton: false,
-      timeline: false
-    };
+    this.service && this.service.getRegions(result => {
+      this.geojson = result;
+    });
+
   }
 
   doMorph() {

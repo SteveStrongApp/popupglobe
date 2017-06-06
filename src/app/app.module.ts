@@ -14,7 +14,7 @@ import { ViewerConfiguration } from 'angular-cesium/src/services/viewer-configur
 
 import { AppComponent } from './app.component';
 import { GlobeComponent } from './globe/globe.component';
-
+import { GlobeService } from './globe/globe.service';
 
 
 @NgModule({
@@ -31,7 +31,7 @@ import { GlobeComponent } from './globe/globe.component';
     FormsModule,
     HttpModule
   ],
-  providers: [CesiumService, ViewerConfiguration],
+  providers: [CesiumService, GlobeService, ViewerConfiguration],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

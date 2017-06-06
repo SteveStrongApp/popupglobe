@@ -27,10 +27,17 @@ export class GlobeService {
   }
 
   getRegions(callback): any {
-    let source = this.http.get('\geojson\COCOMS_regions.json');
+    let source = this.http.get('caas.json');
     source.subscribe(res => {
-      let result = res.json();
-      callback && callback(result);
+
+      let result = res; //.json();
+      if (!result) {
+        console.log(result)
+        callback && callback(result);
+      } else {
+        this.handleError(res);
+      }
+
     }, this.handleError);
 
     return source;
