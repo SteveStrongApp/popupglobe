@@ -9,4 +9,18 @@
     overflow: hidden;
   }
 
-  div.cesium-viewer-animationContainer, div.cesium-viewer-bottom, div.cesium-viewer-timelineContainer {display: none;}
+  div.cesium-viewer-animationContainer, div.cesium-viewer-bottom, div.cesium-viewer-timelineContainer {
+    display: none;
+  }
+  .black-back {
+    background-color: #000;
+  }
+   body {
+    background-color: #000;
+  }
+  .header {
+    height: 50px;
+    background-color: #023761;
+  }
+
+
