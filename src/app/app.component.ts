@@ -23,7 +23,7 @@ export class AppComponent {
       homeButton: false,
       fullscreenButton: false,
       selectionIndicator: false,
-      infoBox: false,
+      infoBox: true,
       timeline: false,
       navigationHelpButton: false,
       //Hide the base layer picker
