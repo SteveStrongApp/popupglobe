@@ -8,3 +8,5 @@
     padding: 0;
     overflow: hidden;
   }
+
+  div.cesium-viewer-animationContainer, div.cesium-viewer-bottom, div.cesium-viewer-timelineContainer {display: none;}
