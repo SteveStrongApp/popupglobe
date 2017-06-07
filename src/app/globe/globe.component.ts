@@ -20,12 +20,20 @@ export class GlobeComponent implements OnInit {
     // this.service && this.service.getRegions(result => {
     //   this.geojson = result;
     // });
+
+
   }
 
   doDrawRegions() {
+    //var viewer = Cesium;
+    //var dataSource = new Cesium.GeoJsonDataSource();
+    //viewer.dataSources.add(dataSource);
+   
+
     this.service.getRegions().subscribe(n => {
       this.geojson = n;
-      console.log(this.geojson)
+      console.log(this.geojson);
+       //dataSource.load(this.geojson);
     });
   }
 }
