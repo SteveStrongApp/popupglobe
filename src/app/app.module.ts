@@ -5,9 +5,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+
+import { AppComponent } from './app.component';
+import { ButtonPanelComponent } from './button-panel.component';
+
 import { ToastModule } from 'ng2-toastr/ng2-toastr';
 
 import { CesiumService } from 'angular-cesium/src/services/cesium/cesium.service';
+
 import { AngularCesiumModule } from 'angular-cesium/src/angular-cesium.module';
 import { ViewerConfiguration } from 'angular-cesium/src/services/viewer-configuration/viewer-configuration.service';
 
@@ -20,9 +25,14 @@ import { ArcLayerComponent } from "./arc-layer/arc-layer.component";
 
 @NgModule({
   declarations: [
+
+    AppComponent, 
+    ButtonPanelComponent
+
     AppComponent,
     ArcLayerComponent,
     GlobeComponent
+
   ],
   imports: [
     BrowserAnimationsModule,
