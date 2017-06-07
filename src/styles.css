@@ -9,6 +9,7 @@
     overflow: hidden;
   }
 
+
   div.cesium-viewer-animationContainer, div.cesium-viewer-bottom, div.cesium-viewer-timelineContainer {
     display: none;
   }
@@ -28,5 +29,4 @@
     color: #fff;
     display:inline-block;
   }
-
 

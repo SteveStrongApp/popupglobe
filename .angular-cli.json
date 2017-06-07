@@ -21,6 +21,7 @@
       "prefix": "app",
       "styles": [
         "styles.css",
+         "../node_modules/ng2-toastr/bundles/ng2-toastr.min.css",
          "../node_modules/cesium/Build/Cesium/Widgets/widgets.css"
       ],
       "scripts": [
