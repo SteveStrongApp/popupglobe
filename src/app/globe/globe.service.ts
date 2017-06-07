@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { EmitterService } from '../common/emitter.service';
 
+import * as regions from '../../assets/geojson/regions.json';
+
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
@@ -26,21 +28,33 @@ export class GlobeService {
     return Observable.throw(errMsg);
   }
 
-  getRegions(callback): any {
-    let source = this.http.get('caas.json');
-    source.subscribe(res => {
+  // getRegions(callback): any {
+  //   let source = this.http.get('caas.json');
+  //   source.subscribe(res => {
 
-      let result = res; //.json();
-      if (!result) {
-        console.log(result)
-        callback && callback(result);
-      } else {
-        this.handleError(res);
-      }
+  //     let result = res; //.json();
+  //     if (!result) {
+  //       console.log(result)
+  //       callback && callback(result);
+  //     } else {
+  //       this.handleError(res);
+  //     }
 
-    }, this.handleError);
+  //   }, this.handleError);
 
-    return source;
+  //   return source;
+  // }
+
+  getRegions() {
+    let model = new Observable(observer => {
+      setTimeout(() => {
+        observer.next(regions);
+      }, 10);
+      setTimeout(() => {
+        observer.complete();
+      }, 10);
+    });
+    return model;
   }
 
 }

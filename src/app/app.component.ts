@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { EmitterService } from './common/emitter.service';
+
 //https://www.npmjs.com/package/ng2-toastr
 import { ToastsManager, ToastOptions, Toast } from 'ng2-toastr/ng2-toastr';
 import { environment } from '../environments/environment';
@@ -40,6 +41,8 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
+
+
 
     EmitterService.get("SHOWERROR").subscribe((item) => {
       //console.log('SHOWERROR ' + JSON.stringify(item, undefined, 3));

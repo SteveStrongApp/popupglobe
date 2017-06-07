@@ -1,8 +1,10 @@
+<button (click)="doDrawRegions()">Draw Regions </button>
 
-<button (click)="doMorph()">morph me </button>
-<pre>{{geojson || json}}</pre>
 <ac-map>
-      <!--<ac-layer acFor="let plane of planes" [show]="showTracks" [context]="this">
+    <arc-layer></arc-layer>
+
+
+    <!--<ac-layer acFor="let plane of planes" [show]="showTracks" [context]="this">
           <ac-billboard-desc props="{
                     image: plane.image,
                     position: plane.position
@@ -14,4 +16,5 @@
           }">
           </ac-label-desc>
       </ac-layer>-->
-  </ac-map>
+</ac-map>
+<pre>{{geojson || json}}</pre>

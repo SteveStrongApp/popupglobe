@@ -15,11 +15,13 @@ import { ViewerConfiguration } from 'angular-cesium/src/services/viewer-configur
 import { AppComponent } from './app.component';
 import { GlobeComponent } from './globe/globe.component';
 import { GlobeService } from './globe/globe.service';
+import { ArcLayerComponent } from "./arc-layer/arc-layer.component";
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    ArcLayerComponent,
     GlobeComponent
   ],
   imports: [
