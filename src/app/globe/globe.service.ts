@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { EmitterService } from '../common/emitter.service';
 
-import * as regions from '../../assets/geojson/regions.json';
+//import * as regions from '../../assets/geojson/regions.json';
 
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
@@ -48,7 +48,7 @@ export class GlobeService {
   getRegions() {
     let model = new Observable(observer => {
       setTimeout(() => {
-        observer.next(regions);
+        observer.next([]);
       }, 10);
       setTimeout(() => {
         observer.complete();
