@@ -81,9 +81,6 @@ export class AppComponent {
   }
 
 
-  doPopup() {
-    this.openToast('success', "test message", 'hello');
-  }
 
 }
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EmitterService } from '../common/emitter.service';
 
 @Component({
   selector: 'button-panel',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
 })
 
 export class ButtonPanelComponent {
-   title = 'Button Panel'; 
+
+  doPopup() {
+    EmitterService.get("SHOWSUCCESS").emit({ 
+      title: 'hello', 
+      message: "you pressed it" 
+    });
+  }
 }
