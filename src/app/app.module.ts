@@ -6,8 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 
-import { AppComponent } from './app.component';
-import { ButtonPanelComponent } from './button-panel.component';
+import { ButtonPanelComponent } from './panels/button-panel.component';
 
 import { ToastModule } from 'ng2-toastr/ng2-toastr';
 
@@ -27,9 +26,7 @@ import { ArcLayerComponent } from "./arc-layer/arc-layer.component";
   declarations: [
 
     AppComponent, 
-    ButtonPanelComponent
-
-    AppComponent,
+    ButtonPanelComponent,
     ArcLayerComponent,
     GlobeComponent
 
