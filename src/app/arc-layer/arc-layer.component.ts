@@ -17,6 +17,9 @@ export class ArcLayerComponent implements OnInit, AfterViewInit {
 	@ViewChild(AcLayerComponent) layer: AcLayerComponent;
 
 	constructor() {
+	}
+
+	ngOnInit(): void {
 		const arcArray = [];
 		for (let i = 0; i < 1000; i++) {
 			let randCenter = Cesium.Cartesian3.fromDegrees(Math.random() * 90 - 40, Math.random() * 90 - 40);
@@ -38,9 +41,6 @@ export class ArcLayerComponent implements OnInit, AfterViewInit {
 		}
 
 		this.arcs$ = Observable.from(arcArray);
-	}
-
-	ngOnInit(): void {
 	}
 
 	ngAfterViewInit(): void {

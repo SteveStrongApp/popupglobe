@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'button-panel',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './button-panel.component.html',
+  styleUrls: ['./button-panel.component.css']
 })
 
 export class ButtonPanelComponent {
