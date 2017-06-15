@@ -9,29 +9,56 @@
     overflow: hidden;
   }
 
-
+/* hiding extra Cesium elements */
   div.cesium-viewer-animationContainer, div.cesium-viewer-bottom, div.cesium-viewer-timelineContainer {
     display: none;
   }
-  .black-back {
-    background-color: #000;
-  }
+  
+/* overall background color */
    body {
     background-color: #191919;
   }
+
+/* header section */
   .header {
     height: 50px;
     background-color: #023761;
-    padding: 0 20px;
+    /* padding: 0 20px; */
+    margin-bottom: 20px;
   }
-  .header p {
+  .logo-header p {
     font-size: 20px;
     color: #fff;
     display:inline-block;
+    padding-top: 10px;
+  }
+  .header-links {
+    padding-top: 15px;
+  }
+  .header-links a {
+    color: #fff;
+  }
+  .header-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .button-group-vertical {
+    padding: 0 0 0 10px;
+    margin-bottom: 10px;
+  }
+  .no-side-padding {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .bottom-margin-10 {
+    margin-bottom: 15px;
   }
 
+
+
+/* xsm viewport size */
   @media (max-width: 767px) {
-      .header {
+      .button-group-vertical .header {
       padding: 0 5px;
     }
   }
