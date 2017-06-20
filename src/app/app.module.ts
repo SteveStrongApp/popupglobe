@@ -21,6 +21,7 @@ import { GlobeComponent } from './globe/globe.component';
 import { GlobeService } from './globe/globe.service';
 import { ArcLayerComponent } from "./arc-layer/arc-layer.component";
 import { SidepanelComponent } from './sidepanel/sidepanel.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { SidepanelComponent } from './sidepanel/sidepanel.component';
     ButtonPanelComponent,
     ArcLayerComponent,
     GlobeComponent,
-    SidepanelComponent
+    SidepanelComponent,
+    HeaderComponent
 
   ],
   imports: [
