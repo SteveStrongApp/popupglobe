@@ -17,6 +17,7 @@ import { ViewerConfiguration } from 'angular-cesium/src/services/viewer-configur
 })
 export class AppComponent {
   title = 'the globe and bootstrap';
+  showGlobe:boolean = false;
 
 
   constructor(private toastrService: ToastsManager, private options: ToastOptions, private vcr: ViewContainerRef, viewerConf: ViewerConfiguration) {

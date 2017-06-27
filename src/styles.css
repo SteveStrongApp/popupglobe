@@ -8,6 +8,9 @@
     padding: 0;
     overflow: hidden;
   }
+  .cesium-viewer {
+    min-height: 600px;
+  }
 
 /* hiding extra Cesium elements */
   div.cesium-viewer-animationContainer, div.cesium-viewer-bottom, div.cesium-viewer-timelineContainer {
@@ -54,6 +57,34 @@
     margin-bottom: 15px;
   }
 
+  /* nav bar section */
+  .navbar {
+    height: 38px;
+    background-color: #004681;
+    /* padding: 0 20px; */
+    margin-bottom: 35px;
+  }
+  .navbar-nav li.active {
+    font-size: 16px;
+    background-color: #006699;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+  .navbar-nav li.active a:hover {
+    background-color: #006699;
+  }
+  .navbar-nav li.active a {
+    color: #FFFF00;
+  }
+  .navbar-nav>li>a {
+    line-height: 19px;
+  }
+  .header {
+    margin-bottom: 1px;
+  }
+  .margin {
+    height: 300px;
+  }
 
 
 /* xsm viewport size */
