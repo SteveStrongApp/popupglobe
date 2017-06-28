@@ -21,6 +21,12 @@ import { GlobeComponent } from './globe/globe.component';
 import { GlobeService } from './globe/globe.service';
 import { ArcLayerComponent } from "./arc-layer/arc-layer.component";
 import { SidepanelComponent } from './sidepanel/sidepanel.component';
+import { HeaderComponent } from './header/header.component';
+import { NavComponent } from './nav/nav.component';
+import { R1headerComponent } from './r1header/r1header.component';
+import { TabsForceSearchComponent } from './tabs-force-search/tabs-force-search.component';
+import { MiniCardComponent } from './mini-card/mini-card.component';
+import { PictureComponentComponent } from './picture-component/picture-component.component';
 
 
 @NgModule({
@@ -30,7 +36,13 @@ import { SidepanelComponent } from './sidepanel/sidepanel.component';
     ButtonPanelComponent,
     ArcLayerComponent,
     GlobeComponent,
-    SidepanelComponent
+    SidepanelComponent,
+    HeaderComponent,
+    NavComponent,
+    R1headerComponent,
+    TabsForceSearchComponent,
+    MiniCardComponent,
+    PictureComponentComponent
 
   ],
   imports: [
