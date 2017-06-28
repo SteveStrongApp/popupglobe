@@ -140,6 +140,46 @@ ul.nav.nav-pills li:first-child {
   margin-right: 4px;
 }
 
+/* mini cards */
+.thumbnail {
+    display: block;
+    height: 150px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+    box-shadow: 0px 0px 10px #333;
+    padding: 0;
+}
+.thumbnail-topblue {
+    background-color: #3c7aad;
+    height: 30px;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 8px;
+
+}
+.thumb-topblue-number {
+  float: left;
+
+}
+.thumb-topblue-square {
+  float: right;
+
+}
+
+.mini-card-group {
+  margin-top: 15px;
+}
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  margin-left: 0;
+  /* top: 4px; */
+}
+
 
 /* xsm viewport size */
   @media (max-width: 767px) {
