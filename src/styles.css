@@ -136,9 +136,6 @@
   background-color: #666666;
   /* border-bottom: none; */
 }
-ul.nav.nav-pills li {
-  
-}
 ul.nav.nav-pills li:first-child {
   margin-right: 4px;
 }
@@ -151,8 +148,6 @@ ul.nav.nav-pills li:first-child {
     }
   }
   @media (max-width: 691px) {
-    .navbar-nav>li>a {
-    }
   }
 
 
