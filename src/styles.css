@@ -76,15 +76,72 @@
   .navbar-nav li.active a {
     color: #FFFF00;
   }
+
+  /* R1 Header */
   .navbar-nav>li>a {
     line-height: 19px;
   }
-  .header {
+  .headerR1 {
     margin-bottom: 1px;
+  }
+  .headerR1 {
+    height: 50px;
+    background-color: #023761;
   }
   .margin {
     height: 300px;
   }
+
+/* tabs for force search */
+#exTab1 .tab-content {
+  color : white;
+  background-color: #666666;
+  padding : 5px 15px;
+}
+
+#exTab2 h3 {
+  color : white;
+  background-color: #666666;
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+.nav-pills>li>a {
+  background-color: #444;
+  color: #ccc;
+  /* border-bottom: 2px solid #000000; */
+}
+.nav-pills>li>a:hover {
+  color: #666;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: #666666;
+  /* border-bottom: none; */
+}
+ul.nav.nav-pills li {
+  
+}
+ul.nav.nav-pills li:first-child {
+  margin-right: 4px;
+}
 
 
 /* xsm viewport size */
@@ -93,4 +150,9 @@
       padding: 0 5px;
     }
   }
+  @media (max-width: 691px) {
+    .navbar-nav>li>a {
+    }
+  }
+
 

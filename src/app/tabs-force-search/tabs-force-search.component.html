@@ -1,7 +1,24 @@
-<p>
-  tabs-force-search works!
-</p>
-<div *ngFor="let hero of list">
+
+<div id="exTab1" class="container">	
+<ul  class="nav nav-pills">
+			<li class="active">
+        <a  href="#1a" data-toggle="tab">Search</a>
+			</li>
+			<li><a href="#2a" data-toggle="tab">Saved Searches</a>
+			</li>
+		</ul>
+
+			<div class="tab-content clearfix">
+			  <div class="tab-pane active" id="1a">
+          <p>Content for Search tab.</p>
+				</div>
+				<div class="tab-pane" id="2a">
+          <p>Content for Saved Search tab.</p>
+				</div>
+			</div>
+  </div>
+
+<!-- <div *ngFor="let hero of list">
   <app-mini-card></app-mini-card>
   <div>{{hero.name}}</div>
-</div>
+</div>-->
