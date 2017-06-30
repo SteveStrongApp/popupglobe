@@ -140,6 +140,15 @@ ul.nav.nav-pills li:first-child {
   margin-right: 4px;
 }
 
+/* search row */
+.search-row {
+  margin-top: 15px;
+  font-size: 16px;
+}
+div.row.search-row input.form-control {
+  height: 33px;
+}
+
 /* mini cards */
 .mini-card-group {
   margin-top: 15px;

@@ -27,6 +27,7 @@ import { R1headerComponent } from './r1header/r1header.component';
 import { TabsForceSearchComponent } from './tabs-force-search/tabs-force-search.component';
 import { MiniCardComponent } from './mini-card/mini-card.component';
 import { PictureComponentComponent } from './picture-component/picture-component.component';
+import { SearchresultsAnalyticsComponent } from './searchresults-analytics/searchresults-analytics.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { PictureComponentComponent } from './picture-component/picture-component
     R1headerComponent,
     TabsForceSearchComponent,
     MiniCardComponent,
-    PictureComponentComponent
+    PictureComponentComponent,
+    SearchresultsAnalyticsComponent
 
   ],
   imports: [

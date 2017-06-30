@@ -10,9 +10,27 @@
 
 			<div class="tab-content clearfix">
 			  <div class="tab-pane active" id="1a">
+						<div class="row search-row">
+							<div class="col-md-10">
+								<div class="input-group"> 
+									<input class="form-control" aria-label="Text input with multiple buttons"> 
+										<div class="input-group-btn"> 
+											<button type="button" class="btn btn-default" aria-label="Help">
+												<span class="glyphicon glyphicon-question-sign"></span>
+											</button> 
+											<button type="button" class="btn btn-default">
+												<span class="glyphicon glyphicon-search"></span>
+											</button> 
+										</div> 
+									</div>
+							</div>
+							<div class="col-md-2 clear-save-links">
+									<a href> Clear</a>&nbsp;<a href> Save</a>
+
+							</div>
+						</div>
 						<div class="row mini-card-group">			
-								<app-mini-card [fte]="hero" *ngFor="let hero of list"></app-mini-card>
-	
+								<app-mini-card [fte]="hero" *ngFor="let hero of list"></app-mini-card>	
 						</div>
 				</div>
 				<div class="tab-pane" id="2a">
