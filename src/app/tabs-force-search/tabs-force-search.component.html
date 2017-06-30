@@ -11,16 +11,8 @@
 			<div class="tab-content clearfix">
 			  <div class="tab-pane active" id="1a">
 						<div class="row mini-card-group">			
-								<app-mini-card></app-mini-card>
-								<app-mini-card></app-mini-card>
-								<app-mini-card></app-mini-card>
-								<app-mini-card></app-mini-card>
-								<app-mini-card></app-mini-card>
-								<app-mini-card></app-mini-card>
-								<app-mini-card></app-mini-card>
-								<app-mini-card></app-mini-card>
-								<app-mini-card></app-mini-card>
-								<app-mini-card></app-mini-card>
+								<app-mini-card *ngFor="let hero of list"></app-mini-card>
+	
 						</div>
 				</div>
 				<div class="tab-pane" id="2a">
