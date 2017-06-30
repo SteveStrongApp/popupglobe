@@ -147,7 +147,8 @@ ul.nav.nav-pills li:first-child {
 .thumbnail {
     display: block;
     height: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
+    margin-top: 10px;
     line-height: 1.42857143;
     background-color: #fff;
     border: none;

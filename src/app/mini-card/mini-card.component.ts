@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-mini-card',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mini-card.component.css']
 })
 export class MiniCardComponent implements OnInit {
-
+  @Input() fte;
   constructor() { }
 
   ngOnInit() {
+  }
+  seestatlink() {
+    alert("hello world"+this.fte.language)
   }
 
 }
