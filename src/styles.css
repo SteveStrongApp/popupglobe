@@ -20,6 +20,7 @@
 /* overall background color */
    body {
     background-color: #191919;
+    overflow: scroll;
   }
 
 /* header section */
@@ -93,6 +94,9 @@
   }
 
 /* tabs for force search */
+.tab-content {
+
+}
 #exTab1 .tab-content {
   color : white;
   background-color: #666666;
@@ -140,6 +144,16 @@ ul.nav.nav-pills li:first-child {
   margin-right: 4px;
 }
 
+/* analytics widgets */
+.analytic-widget-row {
+  margin-top: 15px;
+}
+.analytic-widget {
+  height: 140px;
+  background-color: #3e3e3e;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+}
+
 /* search row */
 .search-row {
   margin-top: 20px;
@@ -157,6 +171,12 @@ div.row.search-row input.form-control {
 }
 
 /* mini cards */
+.mini-card-header {
+  color: #fff;
+  border-bottom: 1px solid #4a4a4a;
+  margin-top: 15px;
+}
+
 .mini-card-group {
   margin-top: 15px;
 }

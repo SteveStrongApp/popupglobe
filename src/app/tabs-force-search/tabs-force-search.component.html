@@ -11,7 +11,7 @@
 			<div class="tab-content clearfix">
 			  <div class="tab-pane active" id="1a">
 						<div class="row search-row">
-							<div class="col-sx-12 col-md-10">
+							<div class="col-xs-12 col-md-10">
 								<div class="input-group"> 
 									<input class="form-control" aria-label="Text input with multiple buttons"> 
 										<div class="input-group-btn"> 
@@ -24,21 +24,34 @@
 										</div> 
 									</div>
 							</div>
-							<div class="col-sx-12 col-md-2 clear-save-links">
+							<div class="col-xs-12 col-md-2 clear-save-links">
 								<p>
 									<a href=""> Clear</a>&nbsp;&nbsp;&nbsp;<a href="">Save</a>
 								</p>
-
 							</div>
+						</div><!-- end search section -->
+						<div class="row analytic-widget-row">
+							<div class="col-xs-12 col-md-4">
+								<div class="analytic-widget"></div>
+							</div>
+							<div class="col-xs-12 col-md-4">
+								<div class="analytic-widget"></div>
+							</div>
+							<div class="col-xs-12 col-md-4">
+								<div class="analytic-widget"></div>
+							</div>						
 						</div>
+						<div class="mini-card-header">
+							<p>Ramstein AB</p>
+						</div>	
 						<div class="row mini-card-group">			
 								<app-mini-card [fte]="hero" *ngFor="let hero of list"></app-mini-card>	
 						</div>
-				</div>
+				</div><!-- end tab 1a -->
 				<div class="tab-pane" id="2a">
-          <p>Content for Saved Search tab.</p>
+          			<p>Content for Saved Search tab.</p>
 				</div>
-			</div>
+			</div><!--end tab set-->
   </div>
 
 <!-- <div *ngFor="let hero of list">
