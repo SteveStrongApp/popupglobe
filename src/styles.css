@@ -160,6 +160,15 @@ ul.nav.nav-pills li:first-child {
   padding: 6px 10px;
   margin-bottom: 18px;
 }
+.analytic-widget .single-number {
+  font-size: 48px;
+}
+.analytic-widget .color-keys {
+  font-size: 10px;
+}
+.color-keys p {
+  margin-bottom: 3px;
+}
 
 /* search row */
 .search-row {
@@ -181,7 +190,7 @@ div.row.search-row input.form-control {
 .mini-card-header {
   color: #fff;
   border-bottom: 1px solid #4a4a4a;
-  margin-top: 15px;
+  margin-top: 5px;
   padding: 5px 8px;
 }
 
