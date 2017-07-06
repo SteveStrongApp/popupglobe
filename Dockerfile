@@ -13,3 +13,7 @@ EXPOSE 80
 
 # docker run -p 80:80 -d wingspan/globe
 # localhost:80 
+
+# docker build -t stevestrongbah/globe .
+#docker push stevestrongbah/globe
+
