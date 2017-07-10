@@ -20,6 +20,7 @@
 /* overall background color */
    body {
     background-color: #191919;
+    overflow: scroll;
   }
 
 /* header section */
@@ -93,6 +94,9 @@
   }
 
 /* tabs for force search */
+.tab-content {
+
+}
 #exTab1 .tab-content {
   color : white;
   background-color: #666666;
@@ -140,7 +144,57 @@ ul.nav.nav-pills li:first-child {
   margin-right: 4px;
 }
 
+/* analytics widgets */
+.analytic-widget-row {
+  margin-top: 15px;
+}
+.analytic-widget {
+  height: 140px;
+  background-color: #505050;
+  margin-bottom: 15px;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+}
+.analytic-widget .heading {
+  height: 32px;
+  border-bottom: 1px solid #5a5a5a;
+  padding: 6px 10px;
+  margin-bottom: 18px;
+}
+.analytic-widget .single-number {
+  font-size: 48px;
+}
+.analytic-widget .color-keys {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.color-keys p {
+  margin-bottom: 3px;
+}
+
+/* search row */
+.search-row {
+  margin-top: 20px;
+}
+.search-row p {
+  margin-top: 8px;
+  font-size: 16px;
+  text-align: left;
+}
+.search-row p a {
+  color: #fff;
+}
+div.row.search-row input.form-control {
+  height: 33px;
+}
+
 /* mini cards */
+.mini-card-header {
+  color: #fff;
+  border-bottom: 1px solid #4a4a4a;
+  margin-top: 5px;
+  padding: 5px 8px;
+}
+
 .mini-card-group {
   margin-top: 15px;
 }

@@ -10,15 +10,121 @@
 
 			<div class="tab-content clearfix">
 			  <div class="tab-pane active" id="1a">
-						<div class="row mini-card-group">			
-								<app-mini-card [fte]="hero" *ngFor="let hero of list"></app-mini-card>
-	
+						<div class="row search-row">
+							<div class="col-xs-12 col-md-10">
+								<div class="input-group"> 
+									<input type="text" class="form-control" placeholder="Example: Korean Signals Analysts at Offutt" aria-label="Text input with multiple buttons"> 
+										<div class="input-group-btn"> 
+
+											<!-- Trigger the modal with a button -->
+											<button type="button" class="btn btn-info btn-default" style="padding:6px 9px 5px 9px; background-color:#f1f1f1;" aria-label="Help" data-toggle="modal" data-target="#myModal">
+													<span class="glyphicon glyphicon-question-sign" style="color:#555; font-size:16px; top:2px" aria-hidden="true"></span>
+												</button>
+										<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+
+										<!-- Modal -->
+										<div id="myModal" class="modal fade" role="dialog">
+											<div class="modal-dialog">
+
+												<!-- Modal content-->
+												<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title">Modal Header</h4>
+												</div>
+												<div class="modal-body">
+													<p>Some text in the modal.</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+												</div>
+
+											</div>
+										</div>
+												 
+											<button type="button" class="btn btn-default" style="padding:6px 9px 5px 9px; background-color:#a0e3fd;" aria-label="Search">
+												<span class="glyphicon glyphicon-search" style="color:#555; font-size:16px; top:2px" aria-hidden="true"></span>
+											</button> 
+										</div> 
+									</div>
+							</div>
+							<div class="col-xs-12 col-md-2 clear-save-links">
+								<p>
+									<a href=""> Clear</a>&nbsp;&nbsp;&nbsp;<a href="">Save</a>
+								</p>
+							</div>
+						</div><!-- end search section -->
+						<div class="row analytic-widget-row">
+							<div class="col-xs-12 col-md-4">	
+									<div class="analytic-widget">
+										<div class="heading">
+											<p>Total Personnel</p>
+										</div>
+										<div class="col-xs-4 circle-graphic">
+											<img src="../../assets/img/circle1.png" alt="" >
+										</div>
+										<div class="col-xs-4 ">
+											<div class="single-number">15</div>
+										</div>
+										<div class="col-xs-4 ">
+
+										</div>
+									</div>
+								
+							</div>
+							<div class="col-xs-12 col-md-4">
+								<div class="analytic-widget">
+									<div class="heading">
+										<p>By Level</p>
+									</div>
+									<div class="col-xs-4 circle-graphic">
+										<img src="../../assets/img/circle2.png" alt="" >
+									</div>
+									<div class="col-xs-4 color-keys">
+										<p>HELPER: 0</p>
+										<p>APPRN: 2</p>
+										<p>JRNYMN: 4</p>									
+									</div>
+									<div class="col-xs-4 color-keys">
+										<p>HELPER: 0</p>
+										<p>APPRN: 2</p>
+										<p>JRNYMN: 4</p>									
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-4">
+								<div class="analytic-widget">
+									<div class="heading">
+										<p>By Functional Group</p>
+									</div>
+									<div class="col-xs-4 circle-graphic">
+										<img src="../../assets/img/circle3.png" alt="" >
+									</div>
+									<div class="col-xs-4 color-keys">
+										<p>HELPER: 0</p>
+										<p>APPRN: 2</p>
+										<p>JRNYMN: 4</p>									
+									</div>
+									<div class="col-xs-4 color-keys">
+										<p>HELPER: 0</p>
+										<p>APPRN: 2</p>
+										<p>JRNYMN: 4</p>									
+									</div>
+								</div>
+							</div>						
 						</div>
-				</div>
+						<div class="mini-card-header">
+							<p>Ramstein AB</p>
+						</div>	
+						<div class="row mini-card-group">			
+								<app-mini-card [fte]="hero" *ngFor="let hero of list"></app-mini-card>	
+						</div>
+				</div><!-- end tab 1a -->
 				<div class="tab-pane" id="2a">
-          <p>Content for Saved Search tab.</p>
+          			<p>Content for Saved Search tab.</p>
 				</div>
-			</div>
+			</div><!--end tab set-->
   </div>
 
 <!-- <div *ngFor="let hero of list">
