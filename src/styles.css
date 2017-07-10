@@ -164,7 +164,8 @@ ul.nav.nav-pills li:first-child {
   font-size: 48px;
 }
 .analytic-widget .color-keys {
-  font-size: 10px;
+  font-size: 11px;
+  letter-spacing: 1px;
 }
 .color-keys p {
   margin-bottom: 3px;
