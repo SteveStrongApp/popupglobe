@@ -330,8 +330,35 @@ div.modal-content.card-details-modal {
 }
 #cardModal {
   color: #000; 
+  font-weight: normal;
 }
+#cardModal thead {
+  background-color: #ccc; 
+}
+div.modal-content.card-details-modal .modal-header {
+  background-color: #3c7aad;
+}
+div.modal-content.card-details-modal .modal-header h4 {
+  color: #fff;
+}
+#cardModal .modal-footer {
+  border: none; 
+  padding-top: 0;
+}
+#cardModal .modal-body {
+  padding-bottom: 0;
+}
+div.modal-content.card-details-modal button.close {
+    color: #fff;
+    opacity: 1.0;
+    text-shadow: none;
+  }
 
+@media (min-width: 1079px) {
+  div.modal-dialog.large-card{
+    width: 800px;
+  }
+}
 
 /* xsm viewport size */
   @media (max-width: 767px) {
@@ -339,6 +366,16 @@ div.modal-content.card-details-modal {
       padding: 0 5px;
     }
   }
+  @media (max-width: 1079px) {
+    div.modal-content.card-details-modal {
+      width: 100%;
+    }
+  }
 
+/* n  @media (max-width: 1078px) {
+  div.modal-dialog.large-card{
+    width: 100%;
+  }
+} */
 
 
