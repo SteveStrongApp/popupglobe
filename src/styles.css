@@ -202,6 +202,10 @@ div.modal-content.help-modal .modal-header {
 div.modal-content.help-modal .modal-body {
   color: #000;
 }
+div.modal-body h5 {
+  font-size: 16px;
+  font-weight: bolder;
+}
 
 /* sort header */
 .sort-header {
@@ -318,6 +322,16 @@ div.info-stats p a {
     text-decoration: none;
 }
 
+/* large baseball cards */
+div.modal-content.card-details-modal {
+  text-align: left;
+  /* width: 75%; */
+  margin: 10px auto;
+}
+#cardModal {
+  color: #000; 
+}
+
 
 /* xsm viewport size */
   @media (max-width: 767px) {
@@ -325,7 +339,6 @@ div.info-stats p a {
       padding: 0 5px;
     }
   }
-  @media (max-width: 691px) {
-  }
+
 
 
