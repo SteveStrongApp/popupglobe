@@ -173,12 +173,15 @@ ul.nav.nav-pills li:first-child {
 
 /* search row */
 .search-row {
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 .search-row p {
   margin-top: 8px;
-  font-size: 16px;
+ /*  font-size: 16px; */
   text-align: left;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 .search-row p a {
   color: #fff;
@@ -186,13 +189,45 @@ ul.nav.nav-pills li:first-child {
 div.row.search-row input.form-control {
   height: 33px;
 }
+button.btn.btn-info.btn-default {
+  border-color: #ccc;
+}
+
+/* help modal */
+div.modal-header {
+  background-color: #ccc;
+}
+div.modal-content.help-modal .modal-header {
+  background-color: #ccc;
+  color: #000;
+}
+div.modal-content.help-modal .modal-body {
+  color: #000;
+}
+div.modal-body h5 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+/* sort header */
+.sort-header {
+  color: #fff;
+ text-align: right;
+  border-bottom: 1px solid #4a4a4a;
+  margin-top: 5px;
+  padding-bottom: 10px; 
+}
+div.sort-header .dropdown-menu {
+  right: 0;
+  float: right;
+}
 
 /* mini cards */
 .mini-card-header {
   color: #fff;
   border-bottom: 1px solid #4a4a4a;
   margin-top: 5px;
-  padding: 5px 8px;
+  /* padding: 5px 8px; */
 }
 
 .mini-card-group {
@@ -289,6 +324,69 @@ div.info-stats p a {
     text-decoration: none;
 }
 
+/* large baseball cards */
+div.modal-content.card-details-modal {
+  text-align: left;
+  /* width: 75%; */
+  margin: 10px auto;
+}
+#cardModal {
+  color: #000; 
+  font-weight: normal;
+}
+#cardModal thead {
+  background-color: #ccc; 
+}
+div.modal-content.card-details-modal .modal-header {
+  background-color: #3c7aad;
+}
+div.modal-content.card-details-modal .modal-header h4 {
+  color: #fff;
+}
+#cardModal .modal-footer {
+  border: none; 
+  padding-top: 0;
+}
+#cardModal .modal-body {
+  padding-bottom: 0;
+}
+div.modal-content.card-details-modal button.close {
+    color: #fff;
+    opacity: 1.0;
+    text-shadow: none;
+  }
+
+  /* pagination footer */
+.pagination-footer {
+  color: #fff;
+  /* text-align: right; */
+  border-top: 1px solid #4a4a4a;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding-bottom: 10px; 
+  padding-top: 10px;
+}
+.prev-next-links {
+  text-align: right; 
+  padding-right: 0;
+}
+.prev-next-links a {
+  color: #fff;
+}
+
+.number-per-page { 
+  padding-left: 0;
+}
+div.pagination-footer .dropdown-menu {
+  right: 0;
+  float: left;
+}
+
+@media (min-width: 1079px) {
+  div.modal-dialog.large-card{
+    width: 800px;
+  }
+}
 
 /* xsm viewport size */
   @media (max-width: 767px) {
@@ -296,7 +394,16 @@ div.info-stats p a {
       padding: 0 5px;
     }
   }
-  @media (max-width: 691px) {
+  @media (max-width: 1079px) {
+    div.modal-content.card-details-modal {
+      width: 100%;
+    }
   }
+
+/* n  @media (max-width: 1078px) {
+  div.modal-dialog.large-card{
+    width: 100%;
+  }
+} */
 
 

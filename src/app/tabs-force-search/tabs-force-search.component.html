@@ -17,23 +17,26 @@
 										<div class="input-group-btn"> 
 
 											<!-- Trigger the modal with a button -->
-											<button type="button" class="btn btn-info btn-default" style="padding:6px 9px 5px 9px; background-color:#f1f1f1;" aria-label="Help" data-toggle="modal" data-target="#myModal">
+											<button type="button" class="btn btn-info btn-default" style="padding:6px 9px 5px 9px; background-color:#f1f1f1;" aria-label="Help" data-toggle="modal" data-target="#helpModal">
 													<span class="glyphicon glyphicon-question-sign" style="color:#555; font-size:16px; top:2px" aria-hidden="true"></span>
 												</button>
 										<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
 
 										<!-- Modal -->
-										<div id="myModal" class="modal fade" role="dialog">
+										<div id="helpModal" class="modal fade" role="dialog">
 											<div class="modal-dialog">
 
 												<!-- Modal content-->
-												<div class="modal-content">
+												<div class="modal-content help-modal">
 												<div class="modal-header">
 													<button type="button" class="close" data-dismiss="modal">&times;</button>
-													<h4 class="modal-title">Modal Header</h4>
+													<h4 class="modal-title">Search Tips</h4>
 												</div>
 												<div class="modal-body">
-													<p>Some text in the modal.</p>
+													<h5>Constructing JQL queries</h5>
+													<p>Lorem ipsum...</p>
+													<h5>Setting the precedence of operators</h5>
+													<p>Lorem ipsum...</p>
 												</div>
 												<div class="modal-footer">
 													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -51,10 +54,25 @@
 							</div>
 							<div class="col-xs-12 col-md-2 clear-save-links">
 								<p>
-									<a href=""> Clear</a>&nbsp;&nbsp;&nbsp;<a href="">Save</a>
+									<a href=""> Clear</a>&nbsp;|&nbsp;<a href="">Save</a>
 								</p>
 							</div>
+							
 						</div><!-- end search section -->
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="sort-header">									
+									<div class="dropdown">Order By:&nbsp;
+										<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">Select
+										<span class="caret"></span></button>
+										<ul class="dropdown-menu pull-right">
+											<li><a href="#">Location</a></li>
+											<li><a href="#">Squadron</a></li>
+										</ul>
+									</div>									
+								</div>
+							</div>
+						</div>
 						<div class="row analytic-widget-row">
 							<div class="col-xs-12 col-md-4">	
 									<div class="analytic-widget">
@@ -120,6 +138,31 @@
 						<div class="row mini-card-group">			
 								<app-mini-card [fte]="hero" *ngFor="let hero of list"></app-mini-card>	
 						</div>
+
+						<p></p>
+						<p></p>
+						<p></p>
+						<div class="row ">
+							<div class="col-xs-12">
+								<div class="pagination-footer">									
+									<div class="col-xs-3 number-per-page">
+										<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">Select
+										<span class="caret"></span></button> Results per Screen
+										<ul class="dropdown-menu" style="width: auto;">
+											<li><a href="#">15</a></li>
+											<li><a href="#">30</a></li>
+											<li><a href="#">60</a></li>
+											<li><a href="#">90</a></li>
+											<li><a href="#">All</a></li>
+										</ul>
+									</div>
+									<div class="col-xs-9 prev-next-links">
+										<a href="">&#60; Prev</a>&nbsp;&nbsp; <a href="">1</a> &nbsp;&nbsp;<a href="">2</a> &nbsp;&nbsp;<a href="">3</a> &nbsp;&nbsp;<a href="">Next &#62;</a>
+									</div>									
+								</div>
+							</div>
+						</div>
+						
 				</div><!-- end tab 1a -->
 				<div class="tab-pane" id="2a">
           			<p>Content for Saved Search tab.</p>
