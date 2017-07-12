@@ -73,71 +73,9 @@
 								</div>
 							</div>
 						</div>
-						<div class="row analytic-widget-row">
-							<div class="col-xs-12 col-md-4">	
-									<div class="analytic-widget">
-										<div class="heading">
-											<p>Total Personnel</p>
-										</div>
-										<div class="col-xs-4 circle-graphic">
-											<img src="../../assets/img/circle1.png" alt="" >
-										</div>
-										<div class="col-xs-4 ">
-											<div class="single-number">15</div>
-										</div>
-										<div class="col-xs-4 ">
-
-										</div>
-									</div>
-								
-							</div>
-							<div class="col-xs-12 col-md-4">
-								<div class="analytic-widget">
-									<div class="heading">
-										<p>By Level</p>
-									</div>
-									<div class="col-xs-4 circle-graphic">
-										<img src="../../assets/img/circle2.png" alt="" >
-									</div>
-									<div class="col-xs-4 color-keys">
-										<p>HELPER: 0</p>
-										<p>APPRN: 2</p>
-										<p>JRNYMN: 4</p>									
-									</div>
-									<div class="col-xs-4 color-keys">
-										<p>HELPER: 0</p>
-										<p>APPRN: 2</p>
-										<p>JRNYMN: 4</p>									
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-md-4">
-								<div class="analytic-widget">
-									<div class="heading">
-										<p>By Functional Group</p>
-									</div>
-									<div class="col-xs-4 circle-graphic">
-										<img src="../../assets/img/circle3.png" alt="" >
-									</div>
-									<div class="col-xs-4 color-keys">
-										<p>HELPER: 0</p>
-										<p>APPRN: 2</p>
-										<p>JRNYMN: 4</p>									
-									</div>
-									<div class="col-xs-4 color-keys">
-										<p>HELPER: 0</p>
-										<p>APPRN: 2</p>
-										<p>JRNYMN: 4</p>									
-									</div>
-								</div>
-							</div>						
-						</div>
-						<div class="mini-card-header">
-							<p>Ramstein AB</p>
-						</div>	
-						<div class="row mini-card-group">			
-								<app-mini-card [fte]="hero" *ngFor="let hero of list"></app-mini-card>	
-						</div>
+					<app-search-analytics></app-search-analytics>
+							
+					<app-mini-card-panel></app-mini-card-panel>	
 
 						<p></p>
 						<p></p>
