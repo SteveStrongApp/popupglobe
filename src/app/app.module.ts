@@ -25,15 +25,18 @@ import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { R1headerComponent } from './r1header/r1header.component';
 import { TabsForceSearchComponent } from './tabs-force-search/tabs-force-search.component';
-import { MiniCardComponent } from './mini-card/mini-card.component';
+import { MiniCardComponent } from './language-resources/mini-card/mini-card.component';
 import { PictureComponentComponent } from './picture-component/picture-component.component';
-import { SearchresultsAnalyticsComponent } from './searchresults-analytics/searchresults-analytics.component';
+import { SearchAnalyticsComponent } from './language-resources/search-analytics/search-analytics.component';
+import { MiniCardPanelComponent } from './language-resources/mini-card-panel/mini-card-panel.component';
+import { BigCardDetailComponent } from './language-resources/big-card-detail/big-card-detail.component';
+import { SearchToolbarComponent } from './search/search-toolbar/search-toolbar.component';
+import { SearchResultsComponent } from './language-resources/search-results/search-results.component';
 
 
 @NgModule({
   declarations: [
-
-    AppComponent, 
+ 
     ButtonPanelComponent,
     ArcLayerComponent,
     GlobeComponent,
@@ -44,7 +47,12 @@ import { SearchresultsAnalyticsComponent } from './searchresults-analytics/searc
     TabsForceSearchComponent,
     MiniCardComponent,
     PictureComponentComponent,
-    SearchresultsAnalyticsComponent
+    AppComponent,
+    SearchAnalyticsComponent,
+    MiniCardPanelComponent,
+    BigCardDetailComponent,
+    SearchToolbarComponent,
+    SearchResultsComponent
 
   ],
   imports: [
