@@ -178,8 +178,10 @@ ul.nav.nav-pills li:first-child {
 }
 .search-row p {
   margin-top: 8px;
-  font-size: 16px;
+ /*  font-size: 16px; */
   text-align: left;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 .search-row p a {
   color: #fff;
@@ -353,6 +355,32 @@ div.modal-content.card-details-modal button.close {
     opacity: 1.0;
     text-shadow: none;
   }
+
+  /* pagination footer */
+.pagination-footer {
+  color: #fff;
+  /* text-align: right; */
+  border-top: 1px solid #4a4a4a;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding-bottom: 10px; 
+  padding-top: 10px;
+}
+.prev-next-links {
+  text-align: right; 
+  padding-right: 0;
+}
+.prev-next-links a {
+  color: #fff;
+}
+
+.number-per-page { 
+  padding-left: 0;
+}
+div.pagination-footer .dropdown-menu {
+  right: 0;
+  float: left;
+}
 
 @media (min-width: 1079px) {
   div.modal-dialog.large-card{
