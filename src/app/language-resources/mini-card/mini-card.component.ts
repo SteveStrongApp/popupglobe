@@ -6,13 +6,17 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./mini-card.component.css']
 })
 export class MiniCardComponent implements OnInit {
-  @Input() fte;
+  @Input() claPerson;
   constructor() { }
 
   ngOnInit() {
   }
   seestatlink() {
-    alert("hello world"+this.fte.language)
+    alert("hello world"+this.claPerson.language)
+  }
+
+  doOpenModal() {
+    
   }
 
 }

@@ -30,6 +30,8 @@ import { PictureComponentComponent } from './picture-component/picture-component
 import { SearchAnalyticsComponent } from './language-resources/search-analytics/search-analytics.component';
 import { MiniCardPanelComponent } from './language-resources/mini-card-panel/mini-card-panel.component';
 import { BigCardDetailComponent } from './language-resources/big-card-detail/big-card-detail.component';
+import { SearchToolbarComponent } from './search/search-toolbar/search-toolbar.component';
+import { SearchResultsComponent } from './language-resources/search-results/search-results.component';
 
 
 @NgModule({
@@ -48,7 +50,9 @@ import { BigCardDetailComponent } from './language-resources/big-card-detail/big
     AppComponent,
     SearchAnalyticsComponent,
     MiniCardPanelComponent,
-    BigCardDetailComponent
+    BigCardDetailComponent,
+    SearchToolbarComponent,
+    SearchResultsComponent
 
   ],
   imports: [
