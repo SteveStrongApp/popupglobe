@@ -25,7 +25,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
 import { R1headerComponent } from './r1header/r1header.component';
 import { TabsForceSearchComponent } from './tabs-force-search/tabs-force-search.component';
-import { MiniCardComponent } from './mini-card/mini-card.component';
+import { MiniCardComponent } from './language-resources/mini-card/mini-card.component';
 import { PictureComponentComponent } from './picture-component/picture-component.component';
 import { SearchresultsAnalyticsComponent } from './searchresults-analytics/searchresults-analytics.component';
 
