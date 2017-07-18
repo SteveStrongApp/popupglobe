@@ -423,14 +423,14 @@ div.sort-header .dropdown-menu {
   float: right;
 }
 .saved-search-row {
-  height: 25px;
-
-  margin-bottom: 15px;
+  height: 28px;
+  margin-bottom: 2px;
+  letter-spacing: 1px;
 }
 .saved-search-row.header {
   background-color: #505050;
-  margin-bottom: 15px;
-  padding-top: 3px;
+  margin-bottom: 8px;
+  padding-top: 5px;
 }
 .saved-search-row .header .checkbox {
   border-right: 1px solid #505050;
