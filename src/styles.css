@@ -170,6 +170,33 @@ ul.nav.nav-pills li:first-child {
 .color-keys p {
   margin-bottom: 3px;
 }
+span.glyphicon.glyphicon-stop.level-helper {
+  color: #63EAF2;
+}
+span.glyphicon.glyphicon-stop.level-apprentice {
+  color: #4790CD;
+}
+span.glyphicon.glyphicon-stop.level-journeyman {
+  color: #2E3192;
+}
+span.glyphicon.glyphicon-stop.level-craftsman {
+  color: #999;
+}
+span.glyphicon.glyphicon-stop.level-super {
+  color: #fff;
+}
+span.glyphicon.glyphicon-stop.function-la {
+  color: #4790CD;
+}
+span.glyphicon.glyphicon-stop.function-cyber {
+  color: #2E3192;
+}
+span.glyphicon.glyphicon-stop.function-sigint {
+  color: #999;
+}
+span.glyphicon.glyphicon-stop.function-targ {
+  color: #fff;
+}
 
 /* search row */
 .search-row {
@@ -377,9 +404,10 @@ div.modal-content.card-details-modal button.close {
 .number-per-page { 
   padding-left: 0;
 }
-div.pagination-footer .dropdown-menu {
+ul.dropdown-menu.page-footer {
   right: 0;
   float: left;
+  max-width: 75px;
 }
 
 @media (min-width: 1079px) {
