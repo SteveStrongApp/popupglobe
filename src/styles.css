@@ -397,7 +397,6 @@ div.modal-content.card-details-modal button.close {
 .prev-next-links a {
   color: #fff;
 }
-
 .number-per-page { 
   padding-left: 0;
 }
@@ -406,6 +405,44 @@ ul.dropdown-menu.page-footer {
   float: left;
   max-width: 75px;
 }
+
+/* Saved Searches */
+.saved-searches {
+  margin: 20px 0;
+  padding-bottom: 25px;
+}
+.sort-header {
+  color: #fff;
+ text-align: right;
+  border-bottom: 1px solid #4a4a4a;
+  margin-top: 5px;
+  padding-bottom: 10px; 
+}
+div.sort-header .dropdown-menu {
+  right: 0;
+  float: right;
+}
+.saved-search-row {
+  height: 25px;
+
+  margin-bottom: 15px;
+}
+.saved-search-row.header {
+  background-color: #505050;
+  margin-bottom: 15px;
+  padding-top: 3px;
+}
+.saved-search-row .header .checkbox {
+  border-right: 1px solid #505050;
+}
+.saved-search-row.header .checkbox input[type=checkbox], .saved-search-row .header .checkbox-inline input[type=checkbox] {
+  margin-left: 10px;
+
+}
+.saved-search-row.header check {
+
+}
+
 
 @media (min-width: 1079px) {
   div.modal-dialog.large-card{
