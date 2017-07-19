@@ -32,6 +32,7 @@ import { MiniCardPanelComponent } from './language-resources/mini-card-panel/min
 import { BigCardDetailComponent } from './language-resources/big-card-detail/big-card-detail.component';
 import { SearchToolbarComponent } from './search/search-toolbar/search-toolbar.component';
 import { SearchResultsComponent } from './language-resources/search-results/search-results.component';
+import { SavedSearchesComponent } from './language-resources/saved-searches/saved-searches.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { SearchResultsComponent } from './language-resources/search-results/sear
     MiniCardPanelComponent,
     BigCardDetailComponent,
     SearchToolbarComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    SavedSearchesComponent
 
   ],
   imports: [
