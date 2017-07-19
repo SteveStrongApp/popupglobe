@@ -439,8 +439,18 @@ div.sort-header .dropdown-menu {
   margin-left: 10px;
 
 }
-.saved-search-row.header check {
-
+thead.thead-saved-searches  {
+  background-color: #505050;
+}
+th.th-check, td.th-check {
+  text-align: center;
+   border-right: 2px solid #666;
+}
+  .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border: none;
+  }
+.saved-searches a {
+  color: #a0e3fd;
 }
 
 
