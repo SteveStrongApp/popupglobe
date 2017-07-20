@@ -322,6 +322,7 @@ div.level-function p.specialty {
 }
 div.info-stats p {
     padding-top: 6px;
+    color: #000;
 }
 div.info-stats p a {
     color: #337aad;
@@ -347,6 +348,9 @@ div.info-stats p a {
     color: #000;
     text-decoration: none;
 }
+  .tooltip {
+    font-size: 14px;
+  }
 
 /* large baseball cards */
 div.modal-content.card-details-modal {
@@ -403,7 +407,8 @@ div.modal-content.card-details-modal button.close {
 ul.dropdown-menu.page-footer {
   right: 0;
   float: left;
-  max-width: 75px;
+  max-width: 60px;
+  min-width: 0;
 }
 
 /* Saved Searches */

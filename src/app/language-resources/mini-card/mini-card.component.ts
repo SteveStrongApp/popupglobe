@@ -15,10 +15,6 @@ export class MiniCardComponent implements OnInit {
     alert("hello world"+this.claPerson.language)
   }
 
-  showTooltip() {
-
-  }
-
   doOpenModal() {
     
   }
